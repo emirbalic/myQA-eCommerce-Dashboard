@@ -3,7 +3,10 @@
     <nb-card-header><i class="fas fa-circle exec" style="color: #8cb6ee"></i> Markets</nb-card-header>
     <nb-list>
       <nb-list-item *ngFor="let market of markets">
-        {{ market.country }} {{ market.percentage }}%
+      
+        {{ market.country }} &nbsp;
+        <img src={{market.flag}} style="height: 1.5rem;" alt="image"> &nbsp;
+         {{ market.percentage }}%
       </nb-list-item>
     </nb-list>
   </nb-card>

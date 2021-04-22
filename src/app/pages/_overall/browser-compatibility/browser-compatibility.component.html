@@ -3,7 +3,12 @@
       <nb-card-header><i class="fas fa-circle exec" style="color: #8cb6ee"></i> Browser Compatibility</nb-card-header>
       <nb-list>
         <nb-list-item *ngFor="let browser of browsers">
-          {{browser.type}} {{browser.percentage}}%
+          {{browser.type}} &nbsp;
+          <i class="fas fa-circle" style="color: red"></i> 
+          <i class="fas fa-circle" style="color: #eed98c"></i> 
+          <i class="fas fa-circle" style="color: #f0e6c1"></i> 
+          <i class="far fa-circle" style="color: green"></i>
+          <i class="far fa-circle" style="color: green"></i>
         </nb-list-item>
       </nb-list>
     </nb-card>
