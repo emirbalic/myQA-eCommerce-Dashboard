@@ -1,0 +1,45 @@
+<div class="card-row" style="color: pink; background-color: white">
+  <nb-card-header
+    ><i class="fas fa-circle exec" style="color: #5ff2e8"></i>
+    Home Page</nb-card-header
+  >
+</div>
+<div class="card-row">
+  <div class="card-col">
+    <nb-card size="tiny" style="border: none">
+      <nb-card-body>
+        <div class="card" style="border: gray 5px">
+          <div
+            class="card-body"
+            style="background-color:#5ff2e8; border-radius: 5px"
+          >
+            <strong>280 sec</strong>
+            <p class="card-text">Load time</p>
+          </div>
+          <div class="card-body">
+            <strong>13</strong>
+            <p class="card-text">Nr of errors</p>
+          </div>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="card-col">
+    <nb-card size="tiny" style="border: none; background-color: whitesmoke">
+      <nb-card-body>
+        <h5>Load time</h5>
+        <circle-progress
+          [percent]="percent"
+          [radius]="radius"
+          [outerStrokeWidth]="16"
+          [innerStrokeWidth]="8"
+          [animation]="true"
+          [animationDuration]="300"
+          [outerStrokeColor]="color"
+          [innerStrokeColor]="color"
+          startFromZero="true"
+        ></circle-progress>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

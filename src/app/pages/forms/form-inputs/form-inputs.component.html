@@ -1,0 +1,166 @@
+<div class="row">
+  <div class="col-md-12">
+    <nb-card class="inline-form-card">
+      <nb-card-header>SETUP WIZARD</nb-card-header>
+      <nb-card-body>
+        <form class="form-inline">
+         
+          <p>
+            3 easy steps will configure Ecommerce settings and schedule
+            automation, alerts and reporting
+          </p>
+        </form>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-md-12">
+    <nb-card class="inline-form-card">
+      <nb-card-body>
+        <p class="mt-3">
+          <strong>1. Name the Project:</strong> MY FIRST PROJECT IN MYQABEE
+        </p>
+        <div class="buttons-row d-flex flex-row-reverse">
+          <button nbButton>CONFIRM SETTINGS</button>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header>
+        <strong>2. Configure Environment:</strong></nb-card-header
+      >
+      <nb-card-body>
+        <div class="col-md-3">Select Browser</div>
+        <div class="col-md-3">
+          <div class="demo-items">
+            <nb-checkbox>Chrome</nb-checkbox>
+            <nb-checkbox>Firefox</nb-checkbox>
+            <nb-checkbox>EDGE</nb-checkbox>
+            <nb-checkbox>Safari</nb-checkbox>
+          </div>
+        </div>
+      </nb-card-body>
+
+      <nb-card-body>
+        <div class="col-md-3">Select platform & device</div>
+        <div class="col-lg-3">
+          <div class="demo-items">
+            <nb-radio-group [(value)]="radioGroupValue">
+              <nb-radio [value]="'Android'"> Android </nb-radio>
+              <nb-radio [value]="'iOS'"> iOS </nb-radio>
+              <nb-radio [value]="'WEB'"> WEB </nb-radio>
+              <nb-radio [value]="'Desktop'"> Desktop </nb-radio>
+            </nb-radio-group>
+            
+          </div>
+        </div>
+      </nb-card-body>
+
+
+      <nb-card>
+        <nb-card-header>Include pages</nb-card-header>
+        <nb-card-body>
+          <form>
+           
+            <div class="form-group row">
+              <label for="inputEmail1" class="label col-sm-3 col-form-label">HOMEPAGE</label>
+              <div class="col-sm-9">
+                <!-- inputEmail1 -->
+                <input type="text" nbInput fullWidth id="inputHomepage" placeholder="https://www.myqueabee.com"> 
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <label for="inputEmail1" class="label col-sm-3 col-form-label">PRODUCT PAGE</label>
+              <div class="col-sm-9">
+              
+                <input type="text" nbInput fullWidth id="inputPruductpage" placeholder="https://www.myqueabee.com"> 
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <label for="inputEmail1" class="label col-sm-3 col-form-label">PAYMENT PAGE</label>
+              <div class="col-sm-9">
+                
+                <input type="text" nbInput fullWidth id="inputPaymentpage" placeholder="https://www.myqueabee.com"> 
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <label for="inputEmail1" class="label col-sm-3 col-form-label">CART PAGE</label>
+              <div class="col-sm-9">
+                <input type="text" nbInput fullWidth id="inputCartpage" placeholder="https://www.myqueabee.com"> 
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <label for="inputEmail1" class="label col-sm-3 col-form-label">LOGOUT</label>
+              <div class="col-sm-9">
+                <input type="text" nbInput fullWidth id="inputLogoutpage" placeholder="https://www.myqueabee.com"> 
+              </div>
+            </div>
+           
+          </form>
+        </nb-card-body>
+      </nb-card>
+
+
+    </nb-card>
+  </div>
+  <div class="col-lg-6">
+    <nb-card>
+      <nb-card-header><strong>3. Schedule Reporting:</strong></nb-card-header>
+      <nb-card-body class="checkbox-radio">
+        <div class="demo-items col-lg-8">
+          <nb-checkbox checked>AUTOMATED WEEKLY REPORT</nb-checkbox>
+          <nb-checkbox >AUTOMATED MONTHLY REPORT</nb-checkbox>
+        </div>
+
+        <div class="demo-items col-lg-2">
+          <p>CRITICAL SYSTEM ALERT</p>
+        </div>
+        <div class="demo-items col-lg-2">
+          <i class="fas fa-exclamation-triangle"></i>
+        </div>
+      </nb-card-body>
+    <!-- </nb-card>
+
+    <nb-card> -->
+      <nb-card-body class="checkbox-radio">
+        
+        <div class="demo-items col-lg-4">
+          <p>Integrate QA automation to your backbone</p>
+        </div>
+       
+
+        <div class="demo-items col-lg-8">
+          <p>Integrate with <strong>task mng</strong> tools</p>
+          <nb-radio-group [(value)]="radioGroupValue">
+            <nb-radio [value]="'Jenkins'"> JENKINS </nb-radio>
+            <nb-radio [value]="'Jira'"> JIRA </nb-radio>
+          </nb-radio-group>
+          <p>Integrate with <strong>ERP</strong></p>
+          <nb-radio-group [(value)]="radioGroupValue">
+            <nb-radio [value]="'Sap'"> SAP </nb-radio>
+            <nb-radio [value]="'MicrosoftDynamicx'"> MICROSOFT DYNAMICS </nb-radio>
+            <nb-radio [value]="'Oracle'"> ORACLE </nb-radio>
+          </nb-radio-group>
+          <p>Integrate with <strong>task mng</strong> tools</p>
+          <nb-radio-group [(value)]="radioGroupValue">
+            <nb-radio [value]="'Hubspot'"> HUBSPOT </nb-radio>
+            <nb-radio [value]="'Selesforce'"> SALESFORCE </nb-radio>
+            <nb-radio [value]="'Zoho'"> ZOHO </nb-radio>
+          </nb-radio-group>
+        </div>
+      </nb-card-body>
+      <nb-card-body>
+        <div class="buttons-row d-flex flex-row-reverse">
+          <button  nbButton outline>
+            SEND REQUEST
+          </button>
+        </div>
+      </nb-card-body>
+    </nb-card>
+  </div>
+</div>

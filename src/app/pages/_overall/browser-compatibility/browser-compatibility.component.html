@@ -1,0 +1,10 @@
+<div class="col-md-12 col-lg-12 col-xxxl-12">
+    <nb-card class="list-card" size="tiny">
+      <nb-card-header>Browser Compatibility</nb-card-header>
+      <nb-list>
+        <nb-list-item *ngFor="let browser of browsers">
+          {{browser.type}} {{browser.percentage}}%
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+</div>

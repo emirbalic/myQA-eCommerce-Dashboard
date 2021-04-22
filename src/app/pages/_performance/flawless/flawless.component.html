@@ -1,0 +1,92 @@
+<div class="card-row" style="color: pink; background-color: white;">
+  <!-- <div class="card-col"> -->
+    <!-- <nb-card size="small"></nb-card> -->
+      <nb-card-header><i class="fas fa-circle exec" style="color: #e698b4;"></i> Flawless</nb-card-header>
+      <!-- </nb-card> -->
+      <!-- </div> -->
+    </div>
+    <div class="card-row">
+      <div class="card-col">
+        <nb-card size="tiny" style="border: none;">
+          <!-- <nb-card-header>Tiny card</nb-card-header> -->
+          <nb-card-body >
+            <div class="card" style="border: gray 5px;">
+              
+              <div class="card-body" style="background-color: #e698b4; border-radius: 5px;">
+                <strong>320</strong>
+                <p class="card-text">Nr of Errors </p>
+                
+              </div>
+              <div class="card-body">
+                <strong>4</strong>
+                <p class="card-text">Critical errors</p>
+              </div>
+            </div>
+            </nb-card-body>
+          </nb-card>
+        </div>
+        <div class="card-col">
+          <nb-card size="tiny" style="border: none; background-color: whitesmoke;">
+            <!-- <nb-card-header>...</nb-card-header> -->
+            <nb-card-body >
+              <!-- <div class="col-xxxl-6 col-xxl-6 col-lg-6 col-md-6"> -->
+                <h5>System stability</h5>
+                <circle-progress
+                [percent]="percent"
+                [radius]="radius"
+                [outerStrokeWidth]="16"
+                [innerStrokeWidth]="8"
+                [outerStrokeColor]="color"
+                [innerStrokeColor]="color"
+                [animation]="true"
+                [animationDuration]="300"
+                startFromZero="true"
+                ></circle-progress>
+                <!-- </div> -->
+              </nb-card-body>
+            </nb-card>
+          </div>
+        </div>
+
+<!-- 
+<div class="card-row">
+  <div class="card-col">
+    
+    <nb-card size="tiny" class="solar-card">
+      <nb-card-header
+        ><i class="fas fa-circle exec"></i> Executive summary</nb-card-header
+      >
+      <nb-card-body>
+      <div class="col-xxxl-6 col-xxl-6 col-lg-6 col-md-6">
+          <circle-progress
+            [percent]="percent"
+            [radius]="radius"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            startFromZero="true"
+          ></circle-progress>
+     
+      </div>
+      <div class="col-xxxl-6 col-xxl-6 col-lg-6 col-md-6">
+    
+          <circle-progress
+            [percent]="percent"
+            [radius]="radius"
+            [outerStrokeWidth]="16"
+            [innerStrokeWidth]="8"
+            [outerStrokeColor]="'#78C000'"
+            [innerStrokeColor]="'#C7E596'"
+            [animation]="true"
+            [animationDuration]="300"
+            startFromZero="true"
+          ></circle-progress>
+        </div>
+      </nb-card-body>
+    </nb-card>
+
+  </div>
+</div> -->
