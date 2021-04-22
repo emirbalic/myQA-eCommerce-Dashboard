@@ -11,6 +11,8 @@ import {
 } from '@nebular/theme';
 
 import { NgxEchartsModule } from 'ngx-echarts';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 import { ThemeModule } from '../../@theme/theme.module';
 import { ExecutiveSummaryComponent } from './executive-summary/executive-summary.component';
@@ -35,6 +37,7 @@ import { DeviceCompatibilityComponent } from './device-compatibility/device-comp
       NbListModule,
       NbProgressBarModule,
       NgxEchartsModule,
+      NgCircleProgressModule.forRoot({})
     ],
     declarations: [
         OverallComponent,

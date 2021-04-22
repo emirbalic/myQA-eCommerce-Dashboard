@@ -9,7 +9,7 @@ import { TrafficChartData } from '../../../@core/data/traffic-chart';
   styleUrls: ['./e-com-stability.component.scss'],
   template: `
     <nb-card size="small">
-      <nb-card-header><i class="fas fa-circle exec"></i> <span>E-comm stability</span>
+      <nb-card-header><span>E-comm stability</span>
         <nb-select [(selected)]="type">
           <nb-option *ngFor="let t of types" [value]="t">{{ t }}</nb-option>
         </nb-select>

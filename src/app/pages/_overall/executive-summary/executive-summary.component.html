@@ -1,7 +1,7 @@
-<div class="card-row" style="color: #867cd0; background-color: white">
+<div class="card-row" style="color: pink; background-color: white">
   <nb-card-header
-    ><i class="fas fa-circle exec" style="color: #867cd0"></i>
-    Cart</nb-card-header
+    ><i class="fas fa-circle exec" style="color: #8cb6ee"></i> Executive
+    summary</nb-card-header
   >
 </div>
 <div class="card-row">
@@ -11,14 +11,14 @@
         <div class="card" style="border: gray 5px">
           <div
             class="card-body"
-            style="background-color:#867cd0; border-radius: 5px"
+            style="background-color: #8cb6ee; border-radius: 5px"
           >
-            <strong>Price</strong>
-            <p class="card-text">Most critical</p>
+            <strong>5.3 seconds</strong>
+            <p class="card-text">Load time</p>
           </div>
           <div class="card-body">
-            <strong>25</strong>
-            <p class="card-text">Nr of errors</p>
+            <strong>320</strong>
+            <p class="card-text">Nr. of errors</p>
           </div>
         </div>
       </nb-card-body>
@@ -27,18 +27,19 @@
   <div class="card-col">
     <nb-card size="tiny" style="border: none; background-color: whitesmoke">
       <nb-card-body>
-        <h5>Performance</h5>
+        <h5>System stability</h5>
         <circle-progress
           [percent]="percent"
           [radius]="radius"
           [outerStrokeWidth]="16"
           [innerStrokeWidth]="8"
-          [animation]="true"
-          [animationDuration]="300"
           [outerStrokeColor]="color"
           [innerStrokeColor]="color"
+          [animation]="true"
+          [animationDuration]="300"
           startFromZero="true"
         ></circle-progress>
+        <!-- </div> -->
       </nb-card-body>
     </nb-card>
   </div>

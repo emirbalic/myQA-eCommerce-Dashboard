@@ -27,7 +27,7 @@ export class EcomStabilityScoreboardComponent implements AfterViewInit, OnDestro
         color: [colors.danger, colors.warning],
         tooltip: {},
         legend: {
-          data: ['Values', 'Actual Spending'],
+          // data: ['Values', 'Actual Spending'],
           //   data: ['Value'],
           textStyle: {
             color: echarts.textColor,
@@ -62,7 +62,7 @@ export class EcomStabilityScoreboardComponent implements AfterViewInit, OnDestro
             data: [
               {
                 value: [4300, 10000, 28000, 35000, 50000, 19000],
-                name: 'Values',
+                name: 'Scores',
               },
               //   {
               //     value: [5000, 14000, 28000, 31000, 42000, 21000],
