@@ -51,14 +51,9 @@ import { EcommStabilityComponent } from './e-comm-stability/e-comm-stability.com
     ],
     declarations: [
         PerformanceComponent,
-        // ExecutiveSummaryComponent,
-        // EcomStabilityComponent,
-        // EcomStabilityChartComponent,
+        
         EcommStabilityComponent,
-        // EcomStabilityScoreboardComponent,
-        // MarketsComponent,
-        // BrowserCompatibilityComponent,
-        // DeviceCompatibilityComponent,
+       
         FlawlessComponent,
         HomepagePerformanceComponent,
         ProductDetailsPerformanceComponent,

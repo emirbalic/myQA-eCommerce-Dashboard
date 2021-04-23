@@ -9,6 +9,7 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { PerformanceModule } from './_performance/performance.module';
 import { OverallModule } from './_overall/overall.module';
+import { HomepageModule } from './_homepage/homepage.module';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { OverallModule } from './_overall/overall.module';
     DashboardModule,
     ECommerceModule,
     MiscellaneousModule,//,
-    PerformanceModule
+    PerformanceModule,
+    HomepageModule
   
 
   ],

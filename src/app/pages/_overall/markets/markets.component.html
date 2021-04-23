@@ -1,27 +1,18 @@
 <div class="card-row">
   <nb-card class="list-card" size="tiny">
     <nb-card-header><i class="fas fa-circle exec" style="color: #8cb6ee"></i> Markets</nb-card-header>
-    <nb-list>
-      <nb-list-item *ngFor="let market of markets">
-<!--       
-        {{ market.country }} &nbsp;
-        <img src={{market.flag}} style="height: 1.5rem;" alt="image"> &nbsp;
-         {{ market.percentage }}% 
-        -->
-
-         <div class="market-list">
-          <!-- <h5>Load time</h5>
-          <p style="border: px solid;">132 sec</p> -->
-          <div><p>{{ market.country }} &nbsp;</p></div>
-          <div><img src={{market.flag}} style="height: 1.5rem;" alt="image"> &nbsp;</div>
-          <div><p> {{ market.percentage }}%</p></div>
-          
-         
-          
-          
-        </div>
-
-      </nb-list-item>
-    </nb-list>
+    <nb-card-body>
+      <table class="table table-striped table-condensed table-hover">
+        <tbody>
+          <ng-container *ngFor="let market of markets">
+            <tr>
+              <td>{{market.country}}</td>
+              <td><img src={{market.flag}} style="height: 1.5rem;" alt="image"> &nbsp;</td>
+              <td>{{market.percentage}}</td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </nb-card-body>
   </nb-card>
 </div>

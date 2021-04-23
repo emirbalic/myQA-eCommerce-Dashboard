@@ -1,52 +1,66 @@
 import { NgModule } from '@angular/core';
 import {
-  NbButtonModule,
+  // NbButtonModule,
   NbCardModule,
-  NbProgressBarModule,
-  NbTabsetModule,
-  NbUserModule,
+  // NbProgressBarModule,
+  // NbTabsetModule,
+  // NbUserModule,
   NbIconModule,
-  NbSelectModule,
+  // NbSelectModule,
   NbListModule,
 } from '@nebular/theme';
 
-import { NgxEchartsModule } from 'ngx-echarts';
+// import { NgxEchartsModule } from 'ngx-echarts';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 
 import { ThemeModule } from '../../@theme/theme.module';
 import { HomepageComponent } from './homepage.component';
-// import { ExecutiveSummaryComponent } from './executive-summary/executive-summary.component';
-// import { EcomStabilityChartComponent } from './e-com-stability/e-com-stability-chart.component';
-// import { EcomStabilityComponent } from './e-com-stability/e-com-stability.component';
-// import { EcomStabilityScoreboardComponent } from './e-com-stability-scoreboard/e-com-stability-scoreboard.component';
-// import { MarketsComponent } from './markets/markets.component';
-// import { OverallComponent } from './overall.component';
-// import { BrowserCompatibilityComponent } from './browser-compatibility/browser-compatibility.component';
-// import { DeviceCompatibilityComponent } from './device-compatibility/device-compatibility.component';
+import { LoadTimeHomepageComponent } from './load-time/load-time-homepage.component';
+import { IssuesComponent } from './issues/issues.component';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { ColorsComponent } from './colors/colors.component';
+import { FontsComponent } from './fonts/fonts.component';
+import { ImagesComponent } from './images/images.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { PersistentBarComponent } from './persistent-bar/persistent-bar.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ServiceComponent } from './service/service.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { VideosComponent } from './videos/videos.component';
+import { FooterBarComponent } from './footer-bar/footer-bar.component';
+
 
 
 @NgModule({
     imports: [
       ThemeModule,
       NbCardModule,
-      NbUserModule,
+      // NbUserModule,
       NbIconModule,
-      NbButtonModule,
-      NbTabsetModule,
-      NbSelectModule,
+      // NbButtonModule,
+      // NbTabsetModule,
+      // NbSelectModule,
       NbListModule,
-      NbProgressBarModule,
-      NgxEchartsModule,
+      // NbProgressBarModule,
+      // NgxEchartsModule,
+      NgCircleProgressModule.forRoot({})
     ],
     declarations: [
-        HomepageComponent
-        // OverallComponent,
-        // ExecutiveSummaryComponent,
-        // EcomStabilityComponent,
-        // EcomStabilityChartComponent,
-        // EcomStabilityScoreboardComponent,
-        // MarketsComponent,
-        // BrowserCompatibilityComponent,
-        // DeviceCompatibilityComponent
+        HomepageComponent,
+        LoadTimeHomepageComponent,
+        IssuesComponent,
+        ButtonsComponent,
+        ColorsComponent,
+        FontsComponent,
+        ImagesComponent,
+        NavigationComponent,
+        PersistentBarComponent,
+        SearchBarComponent,
+        ServiceComponent,
+        SidebarComponent,
+        VideosComponent,
+        FooterBarComponent
     ],
     providers: [
     ],
