@@ -156,7 +156,8 @@ export class EcomStabilityChartComponent implements AfterViewInit, OnDestroy {
           ],
         });
     });
-    console.log(this.points);
+    // =TODO 
+    // console.log(this.points);
   }
 
   onChartInit(echarts) {

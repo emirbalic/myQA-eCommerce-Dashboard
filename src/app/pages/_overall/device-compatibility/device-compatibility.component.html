@@ -7,10 +7,10 @@
 
           <ng-container *ngIf="device.status === true; then thenBlock; else elseBlock"></ng-container>
             <ng-template #thenBlock>
-              <i class="far fa-circle" style="color: red"></i> <i class="fas fa-circle" style="color: green"></i> &nbsp; {{device.model}} 
+              <i class="far fa-circle" style="color: red"></i>&nbsp; <i class="fas fa-circle" style="color: #77eeb4"></i> &nbsp; {{device.model}} 
             </ng-template>
             <ng-template #elseBlock>
-              <i class="fas fa-circle" style="color: green"></i> <i class="far fa-circle" style="color: red"></i> &nbsp; {{device.model}}
+              <i class="fas fa-circle" style="color: #77eeb4"></i>&nbsp; <i class="far fa-circle" style="color: red"></i> &nbsp; {{device.model}}
             </ng-template>
 
         </nb-list-item>

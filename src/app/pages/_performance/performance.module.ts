@@ -11,12 +11,13 @@ import {
 } from '@nebular/theme';
 
 import { NgxEchartsModule } from 'ngx-echarts';
+import { ChartModule } from 'angular2-chartjs';
 
 import { ThemeModule } from '../../@theme/theme.module';
 // import { ExecutiveSummaryComponent } from './executive-summary/executive-summary.component';
 import { FlawlessComponent } from './flawless/flawless.component';
-import { EcomStabilityChartComponent } from './e-com-stability/e-com-stability-chart.component';
-import { EcomStabilityComponent } from './e-com-stability/e-com-stability.component';
+// import { EcomStabilityChartComponent } from './e-com-stability/e-com-stability-chart.component';
+// import { EcomStabilityComponent } from './e-com-stability/e-com-stability.component';
 // import { EcomStabilityScoreboardComponent } from './e-com-stability-scoreboard/e-com-stability-scoreboard.component';
 // import { MarketsComponent } from './markets/markets.component';
 import { PerformanceComponent } from './performance.component';
@@ -31,6 +32,7 @@ import { CartPerformanceComponent } from './cart-performance/cart-performance.co
 import { PaymentPerformanceComponent } from './payment-performance/payment-performance.component';
 import { PromosPerformanceComponent } from './promos-performance/promos-performance.component';
 import { PostOrderPerformanceComponent } from './post-order-performance/post-order-performance.component';
+import { EcommStabilityComponent } from './e-comm-stability/e-comm-stability.component';
 
 @NgModule({
     imports: [
@@ -43,15 +45,16 @@ import { PostOrderPerformanceComponent } from './post-order-performance/post-ord
       NbSelectModule,
       NbListModule,
       NbProgressBarModule,
-     
+      ChartModule,
       NgxEchartsModule,
       NgCircleProgressModule.forRoot({})
     ],
     declarations: [
         PerformanceComponent,
         // ExecutiveSummaryComponent,
-        EcomStabilityComponent,
-        EcomStabilityChartComponent,
+        // EcomStabilityComponent,
+        // EcomStabilityChartComponent,
+        EcommStabilityComponent,
         // EcomStabilityScoreboardComponent,
         // MarketsComponent,
         // BrowserCompatibilityComponent,
